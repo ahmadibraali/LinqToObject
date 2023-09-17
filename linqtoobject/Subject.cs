@@ -11,8 +11,8 @@ namespace LINQtoObject
 
     public override string ToString()
     {
-      return $"▒={{{Name}}} " +
-                $"\t├Description : {{{Description}}}" ;
-    }
+            return $"{Name}";
+               
+                }
   }
 }

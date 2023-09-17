@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,22 @@ namespace LINQtoObject
                     Console.Write($" {item} "); // 1, 2, 3
                 else
                     Console.WriteLine(item);
+            }
+
+
+        }
+        public static void Print(this ArrayList source, string title)
+        {
+            if (source == null)
+                return;
+            Console.WriteLine();
+            Console.WriteLine("┌───────────────────────────────────────────────────────┐");
+            Console.WriteLine($"│   {title.PadRight(52, ' ')}│");
+            Console.WriteLine("└───────────────────────────────────────────────────────┘");
+            Console.WriteLine();
+            foreach (var item in source)
+            {
+                Console.WriteLine(item);
             }
 
 

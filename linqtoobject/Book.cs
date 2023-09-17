@@ -24,6 +24,7 @@ namespace LINQtoObject
                 $"▓▒{Title} |" +
                 $"\n║┬         "+
                 $"\n║├Published By :{Publisher} " +
+                $"\n║├Subject :{Subject} " +
                 $"\n║├Book Price   :{Price} L.E " +
                 $"\n║├Book Summary :{Summary} " +
                 $"\n║├Published At :{PublicationDate.ToString("dd/MM/yyyy")} " +
